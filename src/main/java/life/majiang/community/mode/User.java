@@ -2,15 +2,17 @@ package life.majiang.community.mode;
 
 import io.ebean.Finder;
 import io.ebean.Model;
-import io.ebean.annotation.Sql;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 
-@Sql
+@Entity
 @Table(name="user")
 public class User extends Model {
 
+    @Id
     private Integer id;
     private String name;
     private String accountId;
