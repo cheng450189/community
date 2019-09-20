@@ -120,5 +120,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.9" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: io.ebean:querybean-generator:10.2.1" level="project" />
     <orderEntry type="library" name="Maven: io.ebean:ebean-querybean:10.3.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.10" level="project" />
   </component>
 </module>

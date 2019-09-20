@@ -4,8 +4,7 @@ package life.majiang.community.controller;
 import io.ebean.Ebean;
 import life.majiang.community.dto.AccessTokenDto;
 import life.majiang.community.dto.GitHubUserDto;
-import life.majiang.community.mapper.UserMapper;
-import life.majiang.community.mode.User;
+import life.majiang.community.model.User;
 import life.majiang.community.provider.GitHubProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -56,6 +55,7 @@ public class AuthorizeController {
             user.setName(userDto.getName());
             user.setToken(UUID.randomUUID().toString());
             user.setAccountId(String.valueOf(userDto.getId()));
+            user.setAvatarUrl(userDto.getAvatar_url());
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(System.currentTimeMillis());
             user.save();

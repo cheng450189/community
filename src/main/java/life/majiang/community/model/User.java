@@ -1,4 +1,4 @@
-package life.majiang.community.mode;
+package life.majiang.community.model;
 
 import io.ebean.Finder;
 import io.ebean.Model;
@@ -19,7 +19,8 @@ public class User extends Model {
     private String token;
     private Long gmtCreate;
     private Long gmtModified;
-
+    private String bio;
+    private String avatarUrl;
     public static final Finder<Integer, User> find = new Finder<Integer, User>(User.class);
 
     public Integer getId() {
@@ -68,5 +69,21 @@ public class User extends Model {
 
     public void setGmtModified(Long gmtModified) {
         this.gmtModified = gmtModified;
+    }
+
+    public String getBio() {
+        return bio;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
+    }
+
+    public String getAvatarUrl() {
+        return avatarUrl;
+    }
+
+    public void setAvatarUrl(String avatarUrl) {
+        this.avatarUrl = avatarUrl;
     }
 }

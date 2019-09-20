@@ -1,4 +1,4 @@
-package life.majiang.community.mode;
+package life.majiang.community.model;
 
 
 import io.ebean.Model;
